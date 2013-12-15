@@ -1,0 +1,493 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8942FE2F185E02730053ADA0 /* DBLMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8942FE2E185E02730053ADA0 /* DBLMainViewController.m */; };
+		8942FE32185E03DD0053ADA0 /* DBLDoubleBallView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8942FE31185E03DD0053ADA0 /* DBLDoubleBallView.m */; };
+		899CDE06185C7ABE00290E9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 899CDE05185C7ABE00290E9F /* Foundation.framework */; };
+		899CDE08185C7ABE00290E9F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 899CDE07185C7ABE00290E9F /* CoreGraphics.framework */; };
+		899CDE0A185C7ABE00290E9F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 899CDE09185C7ABE00290E9F /* UIKit.framework */; };
+		899CDE10185C7ABE00290E9F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 899CDE0E185C7ABE00290E9F /* InfoPlist.strings */; };
+		899CDE12185C7ABE00290E9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 899CDE11185C7ABE00290E9F /* main.m */; };
+		899CDE16185C7ABE00290E9F /* DBLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 899CDE15185C7ABE00290E9F /* DBLAppDelegate.m */; };
+		899CDE18185C7ABE00290E9F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 899CDE17185C7ABE00290E9F /* Images.xcassets */; };
+		899CDE1F185C7ABE00290E9F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 899CDE1E185C7ABE00290E9F /* XCTest.framework */; };
+		899CDE20185C7ABE00290E9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 899CDE05185C7ABE00290E9F /* Foundation.framework */; };
+		899CDE21185C7ABE00290E9F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 899CDE09185C7ABE00290E9F /* UIKit.framework */; };
+		899CDE29185C7ABE00290E9F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 899CDE27185C7ABE00290E9F /* InfoPlist.strings */; };
+		899CDE2B185C7ABE00290E9F /* DBLettoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 899CDE2A185C7ABE00290E9F /* DBLettoTests.m */; };
+		899CDE35185C7AF200290E9F /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 899CDE34185C7AF200290E9F /* main.storyboard */; };
+		899CDE38185C875C00290E9F /* all_fixed_db.csv in Resources */ = {isa = PBXBuildFile; fileRef = 899CDE37185C875C00290E9F /* all_fixed_db.csv */; };
+		899CDE3B185C878100290E9F /* DBLHistoryDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 899CDE3A185C878100290E9F /* DBLHistoryDataHelper.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		899CDE22185C7ABE00290E9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 899CDDFA185C7ABE00290E9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 899CDE01185C7ABE00290E9F;
+			remoteInfo = DBLetto;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8942FE2D185E02730053ADA0 /* DBLMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBLMainViewController.h; sourceTree = "<group>"; };
+		8942FE2E185E02730053ADA0 /* DBLMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBLMainViewController.m; sourceTree = "<group>"; };
+		8942FE30185E03DD0053ADA0 /* DBLDoubleBallView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBLDoubleBallView.h; sourceTree = "<group>"; };
+		8942FE31185E03DD0053ADA0 /* DBLDoubleBallView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBLDoubleBallView.m; sourceTree = "<group>"; };
+		899CDE02185C7ABE00290E9F /* DBLetto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DBLetto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		899CDE05185C7ABE00290E9F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		899CDE07185C7ABE00290E9F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		899CDE09185C7ABE00290E9F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		899CDE0D185C7ABE00290E9F /* DBLetto-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DBLetto-Info.plist"; sourceTree = "<group>"; };
+		899CDE0F185C7ABE00290E9F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		899CDE11185C7ABE00290E9F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		899CDE13185C7ABE00290E9F /* DBLetto-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DBLetto-Prefix.pch"; sourceTree = "<group>"; };
+		899CDE14185C7ABE00290E9F /* DBLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBLAppDelegate.h; sourceTree = "<group>"; };
+		899CDE15185C7ABE00290E9F /* DBLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBLAppDelegate.m; sourceTree = "<group>"; };
+		899CDE17185C7ABE00290E9F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		899CDE1D185C7ABE00290E9F /* DBLettoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DBLettoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		899CDE1E185C7ABE00290E9F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		899CDE26185C7ABE00290E9F /* DBLettoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DBLettoTests-Info.plist"; sourceTree = "<group>"; };
+		899CDE28185C7ABE00290E9F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		899CDE2A185C7ABE00290E9F /* DBLettoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBLettoTests.m; sourceTree = "<group>"; };
+		899CDE34185C7AF200290E9F /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
+		899CDE37185C875C00290E9F /* all_fixed_db.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = all_fixed_db.csv; path = /Users/zhangyuchen/Develop/ios_workspace/DBLetto/DBLetto/all_fixed_db.csv; sourceTree = "<absolute>"; };
+		899CDE39185C878100290E9F /* DBLHistoryDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBLHistoryDataHelper.h; sourceTree = "<group>"; };
+		899CDE3A185C878100290E9F /* DBLHistoryDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBLHistoryDataHelper.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		899CDDFF185C7ABE00290E9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				899CDE08185C7ABE00290E9F /* CoreGraphics.framework in Frameworks */,
+				899CDE0A185C7ABE00290E9F /* UIKit.framework in Frameworks */,
+				899CDE06185C7ABE00290E9F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		899CDE1A185C7ABE00290E9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				899CDE1F185C7ABE00290E9F /* XCTest.framework in Frameworks */,
+				899CDE21185C7ABE00290E9F /* UIKit.framework in Frameworks */,
+				899CDE20185C7ABE00290E9F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		899CDDF9185C7ABE00290E9F = {
+			isa = PBXGroup;
+			children = (
+				899CDE0B185C7ABE00290E9F /* DBLetto */,
+				899CDE24185C7ABE00290E9F /* DBLettoTests */,
+				899CDE04185C7ABE00290E9F /* Frameworks */,
+				899CDE03185C7ABE00290E9F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		899CDE03185C7ABE00290E9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				899CDE02185C7ABE00290E9F /* DBLetto.app */,
+				899CDE1D185C7ABE00290E9F /* DBLettoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		899CDE04185C7ABE00290E9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				899CDE05185C7ABE00290E9F /* Foundation.framework */,
+				899CDE07185C7ABE00290E9F /* CoreGraphics.framework */,
+				899CDE09185C7ABE00290E9F /* UIKit.framework */,
+				899CDE1E185C7ABE00290E9F /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		899CDE0B185C7ABE00290E9F /* DBLetto */ = {
+			isa = PBXGroup;
+			children = (
+				899CDE36185C874A00290E9F /* historydata */,
+				899CDE14185C7ABE00290E9F /* DBLAppDelegate.h */,
+				899CDE15185C7ABE00290E9F /* DBLAppDelegate.m */,
+				899CDE17185C7ABE00290E9F /* Images.xcassets */,
+				899CDE0C185C7ABE00290E9F /* Supporting Files */,
+				899CDE34185C7AF200290E9F /* main.storyboard */,
+				899CDE39185C878100290E9F /* DBLHistoryDataHelper.h */,
+				899CDE3A185C878100290E9F /* DBLHistoryDataHelper.m */,
+				8942FE2D185E02730053ADA0 /* DBLMainViewController.h */,
+				8942FE2E185E02730053ADA0 /* DBLMainViewController.m */,
+				8942FE30185E03DD0053ADA0 /* DBLDoubleBallView.h */,
+				8942FE31185E03DD0053ADA0 /* DBLDoubleBallView.m */,
+			);
+			path = DBLetto;
+			sourceTree = "<group>";
+		};
+		899CDE0C185C7ABE00290E9F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				899CDE0D185C7ABE00290E9F /* DBLetto-Info.plist */,
+				899CDE0E185C7ABE00290E9F /* InfoPlist.strings */,
+				899CDE11185C7ABE00290E9F /* main.m */,
+				899CDE13185C7ABE00290E9F /* DBLetto-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		899CDE24185C7ABE00290E9F /* DBLettoTests */ = {
+			isa = PBXGroup;
+			children = (
+				899CDE2A185C7ABE00290E9F /* DBLettoTests.m */,
+				899CDE25185C7ABE00290E9F /* Supporting Files */,
+			);
+			path = DBLettoTests;
+			sourceTree = "<group>";
+		};
+		899CDE25185C7ABE00290E9F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				899CDE26185C7ABE00290E9F /* DBLettoTests-Info.plist */,
+				899CDE27185C7ABE00290E9F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		899CDE36185C874A00290E9F /* historydata */ = {
+			isa = PBXGroup;
+			children = (
+				899CDE37185C875C00290E9F /* all_fixed_db.csv */,
+			);
+			name = historydata;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		899CDE01185C7ABE00290E9F /* DBLetto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 899CDE2E185C7ABE00290E9F /* Build configuration list for PBXNativeTarget "DBLetto" */;
+			buildPhases = (
+				899CDDFE185C7ABE00290E9F /* Sources */,
+				899CDDFF185C7ABE00290E9F /* Frameworks */,
+				899CDE00185C7ABE00290E9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DBLetto;
+			productName = DBLetto;
+			productReference = 899CDE02185C7ABE00290E9F /* DBLetto.app */;
+			productType = "com.apple.product-type.application";
+		};
+		899CDE1C185C7ABE00290E9F /* DBLettoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 899CDE31185C7ABE00290E9F /* Build configuration list for PBXNativeTarget "DBLettoTests" */;
+			buildPhases = (
+				899CDE19185C7ABE00290E9F /* Sources */,
+				899CDE1A185C7ABE00290E9F /* Frameworks */,
+				899CDE1B185C7ABE00290E9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				899CDE23185C7ABE00290E9F /* PBXTargetDependency */,
+			);
+			name = DBLettoTests;
+			productName = DBLettoTests;
+			productReference = 899CDE1D185C7ABE00290E9F /* DBLettoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		899CDDFA185C7ABE00290E9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DBL;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Zhang Yuchen";
+				TargetAttributes = {
+					899CDE1C185C7ABE00290E9F = {
+						TestTargetID = 899CDE01185C7ABE00290E9F;
+					};
+				};
+			};
+			buildConfigurationList = 899CDDFD185C7ABE00290E9F /* Build configuration list for PBXProject "DBLetto" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 899CDDF9185C7ABE00290E9F;
+			productRefGroup = 899CDE03185C7ABE00290E9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				899CDE01185C7ABE00290E9F /* DBLetto */,
+				899CDE1C185C7ABE00290E9F /* DBLettoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		899CDE00185C7ABE00290E9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				899CDE10185C7ABE00290E9F /* InfoPlist.strings in Resources */,
+				899CDE35185C7AF200290E9F /* main.storyboard in Resources */,
+				899CDE18185C7ABE00290E9F /* Images.xcassets in Resources */,
+				899CDE38185C875C00290E9F /* all_fixed_db.csv in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		899CDE1B185C7ABE00290E9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				899CDE29185C7ABE00290E9F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		899CDDFE185C7ABE00290E9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8942FE2F185E02730053ADA0 /* DBLMainViewController.m in Sources */,
+				899CDE12185C7ABE00290E9F /* main.m in Sources */,
+				899CDE3B185C878100290E9F /* DBLHistoryDataHelper.m in Sources */,
+				899CDE16185C7ABE00290E9F /* DBLAppDelegate.m in Sources */,
+				8942FE32185E03DD0053ADA0 /* DBLDoubleBallView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		899CDE19185C7ABE00290E9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				899CDE2B185C7ABE00290E9F /* DBLettoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		899CDE23185C7ABE00290E9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 899CDE01185C7ABE00290E9F /* DBLetto */;
+			targetProxy = 899CDE22185C7ABE00290E9F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		899CDE0E185C7ABE00290E9F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				899CDE0F185C7ABE00290E9F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		899CDE27185C7ABE00290E9F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				899CDE28185C7ABE00290E9F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		899CDE2C185C7ABE00290E9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		899CDE2D185C7ABE00290E9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		899CDE2F185C7ABE00290E9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DBLetto/DBLetto-Prefix.pch";
+				INFOPLIST_FILE = "DBLetto/DBLetto-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		899CDE30185C7ABE00290E9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DBLetto/DBLetto-Prefix.pch";
+				INFOPLIST_FILE = "DBLetto/DBLetto-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		899CDE32185C7ABE00290E9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DBLetto.app/DBLetto";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DBLetto/DBLetto-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DBLettoTests/DBLettoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		899CDE33185C7ABE00290E9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DBLetto.app/DBLetto";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DBLetto/DBLetto-Prefix.pch";
+				INFOPLIST_FILE = "DBLettoTests/DBLettoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		899CDDFD185C7ABE00290E9F /* Build configuration list for PBXProject "DBLetto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				899CDE2C185C7ABE00290E9F /* Debug */,
+				899CDE2D185C7ABE00290E9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		899CDE2E185C7ABE00290E9F /* Build configuration list for PBXNativeTarget "DBLetto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				899CDE2F185C7ABE00290E9F /* Debug */,
+				899CDE30185C7ABE00290E9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		899CDE31185C7ABE00290E9F /* Build configuration list for PBXNativeTarget "DBLettoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				899CDE32185C7ABE00290E9F /* Debug */,
+				899CDE33185C7ABE00290E9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 899CDDFA185C7ABE00290E9F /* Project object */;
+}
