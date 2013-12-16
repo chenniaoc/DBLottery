@@ -92,7 +92,7 @@
     NSMutableArray *resultArray = [NSMutableArray array];
     NSSet *set = [NSSet setWithArray:values];
     NSArray *uniqElementArray = [set allObjects];
-    int modNumber = [uniqElementArray count];
+    NSInteger modNumber = [uniqElementArray count];
     while (YES) {
         int randomIndex = arc4random() % modNumber;
         NSString *candidateNumber = uniqElementArray[randomIndex];

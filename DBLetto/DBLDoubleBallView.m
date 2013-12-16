@@ -69,7 +69,7 @@
     [_number drawInRect:rect withAttributes:attr];
 
     
-    NSLog(@"%d",_selected);
+    //NSLog(@"%d",_selected);
 }
 
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		890250C0185EABB20019EE22 /* all_fixed_db.csv in Resources */ = {isa = PBXBuildFile; fileRef = 890250BF185EABB20019EE22 /* all_fixed_db.csv */; };
 		8942FE2F185E02730053ADA0 /* DBLMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8942FE2E185E02730053ADA0 /* DBLMainViewController.m */; };
 		8942FE32185E03DD0053ADA0 /* DBLDoubleBallView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8942FE31185E03DD0053ADA0 /* DBLDoubleBallView.m */; };
 		899CDE06185C7ABE00290E9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 899CDE05185C7ABE00290E9F /* Foundation.framework */; };
@@ -22,7 +23,6 @@
 		899CDE29185C7ABE00290E9F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 899CDE27185C7ABE00290E9F /* InfoPlist.strings */; };
 		899CDE2B185C7ABE00290E9F /* DBLettoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 899CDE2A185C7ABE00290E9F /* DBLettoTests.m */; };
 		899CDE35185C7AF200290E9F /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 899CDE34185C7AF200290E9F /* main.storyboard */; };
-		899CDE38185C875C00290E9F /* all_fixed_db.csv in Resources */ = {isa = PBXBuildFile; fileRef = 899CDE37185C875C00290E9F /* all_fixed_db.csv */; };
 		899CDE3B185C878100290E9F /* DBLHistoryDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 899CDE3A185C878100290E9F /* DBLHistoryDataHelper.m */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		890250BF185EABB20019EE22 /* all_fixed_db.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = all_fixed_db.csv; sourceTree = "<group>"; };
 		8942FE2D185E02730053ADA0 /* DBLMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBLMainViewController.h; sourceTree = "<group>"; };
 		8942FE2E185E02730053ADA0 /* DBLMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBLMainViewController.m; sourceTree = "<group>"; };
 		8942FE30185E03DD0053ADA0 /* DBLDoubleBallView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBLDoubleBallView.h; sourceTree = "<group>"; };
@@ -58,7 +59,6 @@
 		899CDE28185C7ABE00290E9F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		899CDE2A185C7ABE00290E9F /* DBLettoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBLettoTests.m; sourceTree = "<group>"; };
 		899CDE34185C7AF200290E9F /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
-		899CDE37185C875C00290E9F /* all_fixed_db.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = all_fixed_db.csv; path = /Users/zhangyuchen/Develop/ios_workspace/DBLetto/DBLetto/all_fixed_db.csv; sourceTree = "<absolute>"; };
 		899CDE39185C878100290E9F /* DBLHistoryDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBLHistoryDataHelper.h; sourceTree = "<group>"; };
 		899CDE3A185C878100290E9F /* DBLHistoryDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBLHistoryDataHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -168,7 +168,7 @@
 		899CDE36185C874A00290E9F /* historydata */ = {
 			isa = PBXGroup;
 			children = (
-				899CDE37185C875C00290E9F /* all_fixed_db.csv */,
+				890250BF185EABB20019EE22 /* all_fixed_db.csv */,
 			);
 			name = historydata;
 			sourceTree = "<group>";
@@ -221,6 +221,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Zhang Yuchen";
 				TargetAttributes = {
+					899CDE01185C7ABE00290E9F = {
+						DevelopmentTeam = W48638YC96;
+					};
 					899CDE1C185C7ABE00290E9F = {
 						TestTargetID = 899CDE01185C7ABE00290E9F;
 					};
@@ -249,10 +252,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				890250C0185EABB20019EE22 /* all_fixed_db.csv in Resources */,
 				899CDE10185C7ABE00290E9F /* InfoPlist.strings in Resources */,
 				899CDE35185C7AF200290E9F /* main.storyboard in Resources */,
 				899CDE18185C7ABE00290E9F /* Images.xcassets in Resources */,
-				899CDE38185C875C00290E9F /* all_fixed_db.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +397,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DBLetto/DBLetto-Prefix.pch";
 				INFOPLIST_FILE = "DBLetto/DBLetto-Info.plist";
@@ -407,6 +411,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DBLetto/DBLetto-Prefix.pch";
 				INFOPLIST_FILE = "DBLetto/DBLetto-Info.plist";

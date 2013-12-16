@@ -10,8 +10,9 @@
 #import "DBLDoubleBallView.h"
 #import "DBLHistoryDataHelper.h"
 
-static const int kBallHeight = 30;
-static const int kBallWidth = 30;
+static const int kBallHeight = 35;
+static const int kBallWidth = 35;
+static const int kBallLeftMargin = 30;
 static const int kBallVerticalPadding = kBallHeight + 4;
 static const int kBallHorizontalPadding = kBallWidth + 4;
 
@@ -44,11 +45,11 @@ static const int kBallHorizontalPadding = kBallWidth + 4;
         static int newLineCount = 0;
         newLineCount = i % 7 == 0 ? newLineCount + 1:newLineCount;
         DBLDoubleBallView *ballView = [[DBLDoubleBallView alloc]initWithFrame:
-                                       (CGRect){30 + ( i % 7 * kBallHorizontalPadding),
-                                        80 + (newLineCount * (kBallVerticalPadding)),
+                                       (CGRect){kBallLeftMargin + ( i % 7 * kBallHorizontalPadding),
+                                        10 + (newLineCount * (kBallVerticalPadding)),
                                            kBallWidth,kBallHeight} Number:ballNumber Color:[UIColor redColor]];
         
-        heightCounter = 80 + (newLineCount * (kBallVerticalPadding));
+        heightCounter = 10 + (newLineCount * (kBallVerticalPadding));
         [self.view addSubview:ballView];
     }
     int buttonHeight = 0;
@@ -57,7 +58,7 @@ static const int kBallHorizontalPadding = kBallWidth + 4;
         static int newLineCount = 0;
         newLineCount = i % 7 == 0 ? newLineCount + 1:newLineCount;
         DBLDoubleBallView *ballView = [[DBLDoubleBallView alloc]initWithFrame:
-                                       (CGRect){30 + ( i % 7 * kBallHorizontalPadding),
+                                       (CGRect){kBallLeftMargin + ( i % 7 * kBallHorizontalPadding),
                                            heightCounter + (newLineCount * (kBallVerticalPadding)),
                                            kBallWidth,kBallHeight} Number:ballNumber Color:[UIColor blueColor]];
         buttonHeight = heightCounter + (newLineCount * (kBallVerticalPadding));
