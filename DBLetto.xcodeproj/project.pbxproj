@@ -24,6 +24,9 @@
 		899CDE2B185C7ABE00290E9F /* DBLettoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 899CDE2A185C7ABE00290E9F /* DBLettoTests.m */; };
 		899CDE35185C7AF200290E9F /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 899CDE34185C7AF200290E9F /* main.storyboard */; };
 		899CDE3B185C878100290E9F /* DBLHistoryDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 899CDE3A185C878100290E9F /* DBLHistoryDataHelper.m */; };
+		899E4662186039E6008F6672 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 899E4661186039E6008F6672 /* SpriteKit.framework */; };
+		899E466518603BAC008F6672 /* DBLGameMenuViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 899E466418603BAC008F6672 /* DBLGameMenuViewViewController.m */; };
+		899E466918604E54008F6672 /* DBLFanNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 899E466818604E54008F6672 /* DBLFanNode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,12 @@
 		899CDE34185C7AF200290E9F /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
 		899CDE39185C878100290E9F /* DBLHistoryDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBLHistoryDataHelper.h; sourceTree = "<group>"; };
 		899CDE3A185C878100290E9F /* DBLHistoryDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBLHistoryDataHelper.m; sourceTree = "<group>"; };
+		899E4661186039E6008F6672 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		899E466318603BAC008F6672 /* DBLGameMenuViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBLGameMenuViewViewController.h; sourceTree = "<group>"; };
+		899E466418603BAC008F6672 /* DBLGameMenuViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBLGameMenuViewViewController.m; sourceTree = "<group>"; };
+		899E466718604E54008F6672 /* DBLFanNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBLFanNode.h; sourceTree = "<group>"; };
+		899E466818604E54008F6672 /* DBLFanNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBLFanNode.m; sourceTree = "<group>"; };
+		899E466A186050A1008F6672 /* DBLCommmonMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBLCommmonMacro.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				899E4662186039E6008F6672 /* SpriteKit.framework in Frameworks */,
 				899CDE08185C7ABE00290E9F /* CoreGraphics.framework in Frameworks */,
 				899CDE0A185C7ABE00290E9F /* UIKit.framework in Frameworks */,
 				899CDE06185C7ABE00290E9F /* Foundation.framework in Frameworks */,
@@ -109,6 +119,7 @@
 		899CDE04185C7ABE00290E9F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				899E4661186039E6008F6672 /* SpriteKit.framework */,
 				899CDE05185C7ABE00290E9F /* Foundation.framework */,
 				899CDE07185C7ABE00290E9F /* CoreGraphics.framework */,
 				899CDE09185C7ABE00290E9F /* UIKit.framework */,
@@ -120,6 +131,7 @@
 		899CDE0B185C7ABE00290E9F /* DBLetto */ = {
 			isa = PBXGroup;
 			children = (
+				899E466618604E2D008F6672 /* SKAsserts */,
 				899CDE36185C874A00290E9F /* historydata */,
 				899CDE14185C7ABE00290E9F /* DBLAppDelegate.h */,
 				899CDE15185C7ABE00290E9F /* DBLAppDelegate.m */,
@@ -132,6 +144,8 @@
 				8942FE2E185E02730053ADA0 /* DBLMainViewController.m */,
 				8942FE30185E03DD0053ADA0 /* DBLDoubleBallView.h */,
 				8942FE31185E03DD0053ADA0 /* DBLDoubleBallView.m */,
+				899E466318603BAC008F6672 /* DBLGameMenuViewViewController.h */,
+				899E466418603BAC008F6672 /* DBLGameMenuViewViewController.m */,
 			);
 			path = DBLetto;
 			sourceTree = "<group>";
@@ -143,6 +157,7 @@
 				899CDE0E185C7ABE00290E9F /* InfoPlist.strings */,
 				899CDE11185C7ABE00290E9F /* main.m */,
 				899CDE13185C7ABE00290E9F /* DBLetto-Prefix.pch */,
+				899E466A186050A1008F6672 /* DBLCommmonMacro.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -171,6 +186,15 @@
 				890250BF185EABB20019EE22 /* all_fixed_db.csv */,
 			);
 			name = historydata;
+			sourceTree = "<group>";
+		};
+		899E466618604E2D008F6672 /* SKAsserts */ = {
+			isa = PBXGroup;
+			children = (
+				899E466718604E54008F6672 /* DBLFanNode.h */,
+				899E466818604E54008F6672 /* DBLFanNode.m */,
+			);
+			name = SKAsserts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,7 +299,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8942FE2F185E02730053ADA0 /* DBLMainViewController.m in Sources */,
+				899E466518603BAC008F6672 /* DBLGameMenuViewViewController.m in Sources */,
 				899CDE12185C7ABE00290E9F /* main.m in Sources */,
+				899E466918604E54008F6672 /* DBLFanNode.m in Sources */,
 				899CDE3B185C878100290E9F /* DBLHistoryDataHelper.m in Sources */,
 				899CDE16185C7ABE00290E9F /* DBLAppDelegate.m in Sources */,
 				8942FE32185E03DD0053ADA0 /* DBLDoubleBallView.m in Sources */,
@@ -397,11 +423,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DBLetto/DBLetto-Prefix.pch";
 				INFOPLIST_FILE = "DBLetto/DBLetto-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -411,11 +438,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DBLetto/DBLetto-Prefix.pch";
 				INFOPLIST_FILE = "DBLetto/DBLetto-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
