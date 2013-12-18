@@ -38,7 +38,11 @@
     
     //fan shapes start here
     for (int i=0; i<33; i++) {
-        DBLFanNode *fanNode = [DBLFanNode nodeWithStartAngle:360/16.0f * i endAngle:360/16.0f * (i + 1)];
+        DBLFanNode *fanNode = [DBLFanNode node];//[DBLFanNode nodeWithStartAngle:360/16.0f * i endAngle:360/16.0f * (i + 1)];
+        fanNode.startAngle = 360/16.0f * i;
+        fanNode.endAngle = 360/16.0f * (i + 1);
+        fanNode.number = [NSString stringWithFormat:@"%d",(i + 1)];
+        [fanNode drawContents];
         [turnplate addChild:fanNode];
     }
     
