@@ -11,7 +11,7 @@
 @interface DBLFanNode : SKShapeNode
 
 @property(nonatomic,copy) NSString *number;
-@property(nonatomic,assign) CGFloat startAngle,endAngle;
+@property(nonatomic,assign) CGFloat startAngle,endAngle,unitAngleSize;
 
 +(instancetype)nodeWithStartAngle:(CGFloat) start endAngle:(CGFloat)end;
 

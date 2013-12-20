@@ -33,14 +33,15 @@
     turnplate.fillColor = [SKColor whiteColor];
     
     
-    turnplate.userInteractionEnabled = YES;
+    turnplate.userInteractionEnabled = NO;
     turnplate.alpha = 0.8f;
     
     //fan shapes start here
-    for (int i=0; i<33; i++) {
+    int numberOfFan = 16;
+    for (int i=0; i<numberOfFan; i++) {
         DBLFanNode *fanNode = [DBLFanNode node];//[DBLFanNode nodeWithStartAngle:360/16.0f * i endAngle:360/16.0f * (i + 1)];
-        fanNode.startAngle = 360/16.0f * i;
-        fanNode.endAngle = 360/16.0f * (i + 1);
+        fanNode.startAngle = 360.0/numberOfFan * i;
+        fanNode.endAngle = 360.0/numberOfFan * (i + 1);
         fanNode.number = [NSString stringWithFormat:@"%d",(i + 1)];
         [fanNode drawContents];
         [turnplate addChild:fanNode];
@@ -54,7 +55,15 @@
 - (void)didMoveToView:(SKView *)view
 {
     self.backgroundColor = SKRGB(255, 69, 0);
-    [self addChild:[self newTurnplate]];
+    SKNode *turnPlate = [self newTurnplate];
+
+    turnPlate.name = @"turnPlateNode";
+    [self addChild:turnPlate];
+    
+    
+    SKAction *rotateAction = [SKAction rotateToAngle:2 * 3.1415926 duration:5];
+    SKAction *repeatRotateAction = [SKAction repeatActionForever:rotateAction];
+    [turnPlate runAction:repeatRotateAction];
 }
 
 @end
