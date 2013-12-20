@@ -12,6 +12,7 @@
 
 @property(nonatomic,copy) NSString *number;
 @property(nonatomic,assign) CGFloat startAngle,endAngle,unitAngleSize;
+//@property(nonatomic,strong) SKColor* backgroudolor;
 
 +(instancetype)nodeWithStartAngle:(CGFloat) start endAngle:(CGFloat)end;
 

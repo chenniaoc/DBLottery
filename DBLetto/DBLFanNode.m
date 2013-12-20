@@ -107,7 +107,7 @@ static void SetPropertyIMP(id self,SEL aSet,id aValue)
     }
 
     self.path = myFanPath;
-    self.fillColor = SKRGB(252, 241, 199);
+    //self.fillColor = SKRGB(252, 241, 199);
     self.lineWidth = 0.01f;
     CGPathRelease(myFanPath);
 }
