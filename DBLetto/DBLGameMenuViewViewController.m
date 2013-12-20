@@ -28,7 +28,9 @@
     
     turnplate.path = turnplatePath;
 
-    turnplate.position = (CGPoint){(320-250)/2.0,self.view.frame.size.height/2 - 250/2.0};
+    //turnplate.position = (CGPoint){(320-250)/2.0,self.view.frame.size.height/2 - 250/2.0};
+    turnplate.position = (CGPoint){-125,-125};
+
     turnplate.strokeColor = [SKColor yellowColor];
     turnplate.fillColor = [SKColor whiteColor];
     
@@ -55,15 +57,20 @@
 - (void)didMoveToView:(SKView *)view
 {
     self.backgroundColor = SKRGB(255, 69, 0);
+    SKNode *hover = [SKNode node];
+    hover.position = CGPointMake(320/2, 480/2 + 125);
+    
+    
     SKNode *turnPlate = [self newTurnplate];
 
     turnPlate.name = @"turnPlateNode";
-    [self addChild:turnPlate];
+    [hover addChild:turnPlate];
+    [self addChild:hover];
     
     
     SKAction *rotateAction = [SKAction rotateToAngle:2 * 3.1415926 duration:5];
     SKAction *repeatRotateAction = [SKAction repeatActionForever:rotateAction];
-    [turnPlate runAction:repeatRotateAction];
+    [hover runAction:repeatRotateAction];
 }
 
 @end
