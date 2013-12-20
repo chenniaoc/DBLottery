@@ -58,43 +58,48 @@
 
 - (void)didMoveToView:(SKView *)view
 {
-    self.backgroundColor = SKRGB(255, 69, 0);
-    SKNode *hover = [SKNode node];
-    hover.position = CGPointMake(320/2, 480/2 + 125);
-    hover.name = @"turnPlateHover";
-    
-    SKNode *turnPlate = [self newTurnplateWithNumbers:16];
-
-    turnPlate.name = @"turnPlateNode";
-    [hover addChild:turnPlate];
-    [self addChild:hover];
-    
-
-    SKAction *rotateAction = [SKAction rotateToAngle:6000 * 3.1415926 duration:60*60*24];
-    //SKAction *repeatRotateAction = [SKAction repeatActionForever:rotateAction];
-    [hover runAction:rotateAction];
-    
-    double delayInSeconds = 10.0;
-    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
-    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-        //[hover removeAllActions];
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        self.backgroundColor = SKRGB(255, 69, 0);
+        SKNode *hover = [SKNode node];
+        hover.position = CGPointMake(320/2, 480/2 + 125);
+        hover.name = @"turnPlateHover";
+        
+        SKNode *turnPlate = [self newTurnplateWithNumbers:16];
+        
+        turnPlate.name = @"turnPlateNode";
+        [hover addChild:turnPlate];
+        [self addChild:hover];
+        
+        
+        SKAction *rotateAction = [SKAction rotateToAngle:6000 * 3.1415926 duration:60*60*24];
+        //SKAction *repeatRotateAction = [SKAction repeatActionForever:rotateAction];
+        [hover runAction:rotateAction];
+        
+        double delayInSeconds = 10.0;
+        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+            //[hover removeAllActions];
+        });
+        
+        UIButton *changeNumbersButton = [UIButton buttonWithType:UIButtonTypeSystem];
+        [changeNumbersButton setTitle:@"change to 32" forState:UIControlStateNormal];
+        changeNumbersButton.frame = CGRectMake(320/2+20, 350, 100, 50);
+        changeNumbersButton.backgroundColor = [UIColor whiteColor];
+        [changeNumbersButton addTarget:self action:@selector(changeNumbers:) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:changeNumbersButton];
+        _turnplateNumber = 16;
+        
+        UIButton *startButton = [UIButton buttonWithType:UIButtonTypeSystem];
+        [startButton setTitle:@"start" forState:UIControlStateNormal];
+        startButton.frame = CGRectMake(320/2-100-20, 350, 100, 50);
+        startButton.backgroundColor = [UIColor whiteColor];
+        [startButton addTarget:self action:@selector(start:) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:startButton];
+        _isRotating = NO;
     });
+
     
-    UIButton *changeNumbersButton = [UIButton buttonWithType:UIButtonTypeSystem];
-    [changeNumbersButton setTitle:@"change to 32" forState:UIControlStateNormal];
-    changeNumbersButton.frame = CGRectMake(320/2+20, 350, 100, 50);
-    changeNumbersButton.backgroundColor = [UIColor whiteColor];
-    [changeNumbersButton addTarget:self action:@selector(changeNumbers:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:changeNumbersButton];
-    _turnplateNumber = 16;
-    
-    UIButton *startButton = [UIButton buttonWithType:UIButtonTypeSystem];
-    [startButton setTitle:@"start" forState:UIControlStateNormal];
-    startButton.frame = CGRectMake(320/2-100-20, 350, 100, 50);
-    startButton.backgroundColor = [UIColor whiteColor];
-    [startButton addTarget:self action:@selector(start:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:startButton];
-    _isRotating = NO;
 }
 
 -(void)changeNumbers:(UIButton *)sender
@@ -166,9 +171,25 @@
     view.showsDrawCount = YES;
     view.showsNodeCount = YES;
     
-    DBLMenuScene *menuScene = [[DBLMenuScene alloc] initWithSize:[UIScreen mainScreen].bounds.size];
-    [view presentScene:menuScene];
 	// Do any additional setup after loading the view.
+}
+
+-(void)viewDidDisappear:(BOOL)animated
+{
+    SKView *view = (SKView *)self.view;
+    NSLog(@"%d",animated);
+}
+
+static DBLMenuScene *menuScene = nil;
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    SKView *view = (SKView *)self.view;
+    [view presentScene:[[SKScene alloc] init]];
+    if (!menuScene) {
+        menuScene = [[DBLMenuScene alloc] initWithSize:[UIScreen mainScreen].bounds.size];
+    }
+    [view presentScene:menuScene];
 }
 
 - (void)didReceiveMemoryWarning
